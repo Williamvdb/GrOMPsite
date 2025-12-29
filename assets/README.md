@@ -8,23 +8,23 @@ The following assets should be placed in this directory:
 
 ### Main Media Section
 - `teaser_image.png` - Main teaser image for the paper
-- `teaser_video.mp4` - Main teaser video for the paper
+- `compilation2x.mp4` - Main teaser video for the paper
 
 ### Task 1: Nut Threading
-- `nut_vanilla.mp4` - vanilla DP nut trial compilation
+- `nut_dp.mp4` - vanilla DP nut trial compilation
 - `nut_gromp.mp4` - gromp DP nut trial compilation
 
 ### Task 2: Peg Insertion
-- `peg_vanilla.mp4` - vanilla DP peg trial compilation
+- `peg_dp.mp4` - vanilla DP peg trial compilation
 - `peg_gromp.mp4` - gromp DP peg trial compilation
 
 ### Task 3: Battery Cover Placement
-- `cover_vanilla.mp4` - vanilla DP cover trial compilation
-- `cover_gromp.mp4` - gromp DP cover trial compilation
+- `remote_dp.mp4` - vanilla DP remote cover trial compilation
+- `remote_gromp.mp4` - gromp DP remote cover trial compilation
 
 ### Task 4: USB Insertion
-- `USB_vanilla.mp4` - vanilla DP USB trial compilation
-- `USB_gromp.mp4` - gromp DP USB trial compilation
+- `usb_dp.mp4` - vanilla DP USB trial compilation
+- `usb_gromp.mp4` - gromp DP USB trial compilation
 
 ## File Format Guidelines
 - Images: JPEG or PNG format
