@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOMP: Grasped Object Manifold Projection for Multimodal Imitation Learning of Manipulation</title>
+    <title>GrOMP: Grasped Object Manifold Projection for Multimodal Imitation Learning of Manipulation</title>
     <link rel="stylesheet" href="styles.css">
     <script src="video-speed-control.js"></script>
 </head>
@@ -11,7 +11,7 @@
     <div class="container">
         <!-- Title Section -->
         <header>
-            <h1 class="title">GOMP: Grasped Object Manifold Projection for Multimodal Imitation Learning of Manipulation</h1>
+            <h1 class="title">GrOMP: Grasped Object Manifold Projection for Multimodal Imitation Learning of Manipulation</h1>
             
             <!-- Authors and Affiliations -->
             <div class="authors">
@@ -25,7 +25,7 @@
 
             <!-- Menu Links -->
             <nav class="menu">
-                <a href="https://github.com/Williamvdb/GOMPsite/blob/ab9a64fd1e62b75fe320df4cc99f631d43dfb5b8/GOMP_paper.pdf" class="menu-link">Paper</a>
+                <a href="https://github.com/Williamvdb/GrOMPsite/blob/ab9a64fd1e62b75fe320df4cc99f631d43dfb5b8/GrOMP_paper.pdf" class="menu-link">Paper</a>
                 <a href="#arxiv" class="menu-link">arXiv</a>
                 <a href="https://www.dropbox.com/scl/fo/jlbm9q45bpx2xbz040c9u/AIw702EBILtMJ-iGs9N-jXg?rlkey=pg253ore0p3czz6ftvjk7jje5&st=ojriy2l9&dl=0" class="menu-link">Data</a>
             </nav>
@@ -37,7 +37,7 @@
             <section class="media-section">
                 <div class="media-container">
                     <div class="media-item">
-                        <img src="assets/teaser_image.png" alt="GOMP Teaser Image" class="teaser-image">
+                        <img src="assets/teaser_image.png" alt="GrOMP Teaser Image" class="teaser-image">
                     </div>
                     <div class="media-item">
                         <video class="teaser-video" controls>
@@ -52,7 +52,7 @@
             <section class="abstract-section">
                 <h2>Abstract</h2>
                 <p class="abstract-text">
-                    Imitation Learning (IL) holds great potential for learning repetitive manipulation tasks, such as those in industrial assembly. However, its effectiveness is often limited by insufficient trajectory precision due to compounding errors. In this paper, we introduce Grasped Object Manifold Projection (GOMP), an interactive method that mitigates these errors by constraining a non-rigidly grasped object to a lower-dimensional manifold. GOMP assumes a precise task in which a manipulator holds an object that may shift within the grasp in an observable manner and must be mated with a grounded part. Crucially, all GOMP enhancements are learned from the same expert dataset used to train the base IL policy, and are adjusted with an n-arm bandit-based interactive component. We show that this manifold constraint theoretically improves upon the well-known compounding error bound in IL literature. We demonstrate the framework on four precise assembly tasks using tactile feedback, and note that the approach remains modality-agnostic.
+                    Imitation Learning (IL) holds great potential for learning repetitive manipulation tasks, such as those in industrial assembly. However, its effectiveness is often limited by insufficient trajectory precision due to compounding errors. In this paper, we introduce Grasped Object Manifold Projection (GrOMP), an interactive method that mitigates these errors by constraining a non-rigidly grasped object to a lower-dimensional manifold. GrOMP assumes a precise task in which a manipulator holds an object that may shift within the grasp in an observable manner and must be mated with a grounded part. Crucially, all GrOMP enhancements are learned from the same expert dataset used to train the base IL policy, and are adjusted with an n-arm bandit-based interactive component. We show that this manifold constraint theoretically improves upon the well-known compounding error bound in IL literature. We demonstrate the framework on four precise assembly tasks using tactile feedback, and note that the approach remains modality-agnostic.
                 </p>
             </section>
 
@@ -65,12 +65,12 @@
                             <source src="assets/proj.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <p class="video-caption">6 possible projections of object pose trajectories from expert demonstrations of nut threading. Each projection has a different number of degrees of freedom. GOMP defines a set of manifolds on which to project object pose trajectories, then interactively selects the best manifold for the task from this set.</p>
+                        <p class="video-caption">6 possible projections of object pose trajectories from expert demonstrations of nut threading. Each projection has a different number of degrees of freedom. GrOMP defines a set of manifolds on which to project object pose trajectories, then interactively selects the best manifold for the task from this set.</p>
                     </div>
                     <div class="video-container">
                         <div class="media-item">
                             <img src="assets/projection.png" alt="Live projection image" class="teaser-image">
-                        <p class="video-caption">Visualization of current object pose, desired object pose from Vanilla Diffusion Policy, and desired object pose from Diffusion Policy + GOMP during rollout of select tasks.</p>
+                        <p class="video-caption">Visualization of current object pose, desired object pose from Vanilla Diffusion Policy, and desired object pose from Diffusion Policy + GrOMP during rollout of select tasks.</p>
                     </div>
                 </div>
             </section>
@@ -88,10 +88,10 @@
                     </div>
                     <div class="video-container">
                         <video controls>
-                            <source src="assets/nut_gomp.mp4" type="video/mp4">
+                            <source src="assets/nut_gromp.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <p class="video-caption">GOMP-enhanced Diffusion Policy</p>
+                        <p class="video-caption">GrOMP-enhanced Diffusion Policy</p>
                     </div>
                 </div>
             </section>
@@ -109,10 +109,10 @@
                     </div>
                     <div class="video-container">
                         <video controls>
-                            <source src="assets/peg_gomp.mp4" type="video/mp4">
+                            <source src="assets/peg_gromp.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <p class="video-caption">GOMP-enhanced Diffusion Policy</p>
+                        <p class="video-caption">GrOMP-enhanced Diffusion Policy</p>
                     </div>
                 </div>
             </section>
@@ -130,10 +130,10 @@
                     </div>
                     <div class="video-container">
                         <video controls>
-                            <source src="assets/remote_gomp.mp4" type="video/mp4">
+                            <source src="assets/remote_gromp.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <p class="video-caption">GOMP-enhanced Diffusion Policy</p>
+                        <p class="video-caption">GrOMP-enhanced Diffusion Policy</p>
                     </div>
                 </div>
             </section>
@@ -151,10 +151,10 @@
                     </div>
                     <div class="video-container">
                         <video controls>
-                            <source src="assets/usb_gomp.mp4" type="video/mp4">
+                            <source src="assets/usb_gromp.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <p class="video-caption">GOMP-enhanced Diffusion Policy</p>
+                        <p class="video-caption">GrOMP-enhanced Diffusion Policy</p>
                     </div>
                 </div>
             </section>
@@ -169,7 +169,7 @@
                     </div>
                     <div class="media-item">
                         <img src="assets/demonstration.png" alt="Kinesthetic demonstration image" class="teaser-image">
-                        <p class="video-caption">We used kinesthetic demonstrations used to train GOMP and Diffusion Policy in this work.</p>
+                        <p class="video-caption">We used kinesthetic demonstrations used to train GrOMP and Diffusion Policy in this work.</p>
                     </div>
                 </div>
             </section>
@@ -177,8 +177,8 @@
             <!-- BibTeX Section -->
             <section class="bibtex-section">
                 <h2>BibTeX</h2>
-                <pre class="bibtex-code"><code>@article{gomp2024,
-  title={GOMP: Grasped Object Manifold Projection for Multimodal Imitation Learning of Manipulation},
+                <pre class="bibtex-code"><code>@article{gromp2024,
+  title={GrOMP: Grasped Object Manifold Projection for Multimodal Imitation Learning of Manipulation},
   author={van den Bogert, William and Linkowski, Gregory and Fazeli, Nima},
   journal={arXiv},
   year={2025}
@@ -188,7 +188,7 @@
 
         <!-- Footer -->
         <footer>
-            <p>&copy; GOMP. All rights reserved.</p>
+            <p>&copy; GrOMP. All rights reserved.</p>
         </footer>
     </div>
 </body>
